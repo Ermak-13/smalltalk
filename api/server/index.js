@@ -22,11 +22,3 @@ client.on('message', function (topic, _message, options) {
     client.publish(message.responseTopic, JSON.stringify({ message: 'success' }));
   }
 });
-
-//
-client.subscribe('request');
-
-if (topic === 'request') {
-  // ...
-  client.publish(payload.responseTopic, JSON.stringify({ message: 'success' }));
-}

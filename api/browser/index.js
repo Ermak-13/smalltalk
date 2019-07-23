@@ -6,8 +6,8 @@ const options = {
   protocolVersion: 5
 }
 const client = mqtt.connect('wss://mqtt.flespi.io:443', options);
-const UUID = uuid();
 
+const UUID = uuid();
 const RESPONSE_TOPIC = `response/${UUID}`;
 
 client.on('connect', function () {
