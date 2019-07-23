@@ -1,0 +1,25 @@
+{
+  "name": "smalltalk",
+  "version": "1.0.0",
+  "description": "MQTT examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MQTT",
+    "MQTT",
+    "API",
+    "MQTT",
+    "Examples"
+  ],
+  "author": "Maksim Yermalovich",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "git+https://github.com/mqttjs/MQTT.js.git"
+  },
+  "devDependencies": {
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
