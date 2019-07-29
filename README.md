@@ -2,13 +2,13 @@
 How build API usging MQT
 
 
-## start
+## START
 A simple MQTT applications. Consist of:
 * browser app (turn on lamp)
 * server app (turn off lamp after 5 seconds)
 * badclient app (break lamp)
 
-## Installation
+## START - Installation
 1. set Flespi Token (start/browser/index.js, start/server/index.js, start/badclient/index.js)
 2. build browser app
 ```
@@ -24,13 +24,13 @@ node start/badclient/index.js
 ```
 
 
-## api
+## API
 A simple MQTT Api applications. Consist of:
 * browser app (make request to turn off lamp)
 * server app (set state & response)
 
 
-## Installation
+## API - Installation
 1. set Flespi Token (api/browser/index.js, api/server/index.js)
 2. build browser app
 ```

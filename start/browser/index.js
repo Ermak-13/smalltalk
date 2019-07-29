@@ -1,17 +1,17 @@
 const mqtt = require('mqtt')
 
 const options = {
-  username: 'FlespiToken tXQfzb3m8EWgnI3WmNoXaQiDo7zdfoPx9vCyxwLtYxz95tWi4a32Obv38U6b6My6',
+  username: 'FlespiToken ___',
   protocolId: 'MQTT',
   protocolVersion: 5
 }
-const client = mqtt.connect('wss://mqtt.flespi.io:443', options)
+const mqttClient = mqtt.connect('wss://mqtt.flespi.io:443', options)
 
-client.on('connect', function () {
-  client.subscribe('state');
+mqttClient.on('connect', function () {
+  mqttClient.subscribe('state');
 });
 
-client.on("message", function (topic, _payload) {
+mqttClient.on("message", function (topic, _payload) {
   const payload = JSON.parse(_payload.toString());
 
   if (topic === 'state') {
@@ -29,5 +29,5 @@ button.addEventListener('click', function () {
     status: 'on'
   });
 
-  client.publish('state', payload);
+  mqttClient.publish('state', payload);
 });

@@ -1,7 +1,7 @@
 const mqtt = require('mqtt')
 
 const options = {
-  username: 'FlespiToken tXQfzb3m8EWgnI3WmNoXaQiDo7zdfoPx9vCyxwLtYxz95tWi4a32Obv38U6b6My6',
+  username: 'FlespiToken ___',
   protocolId: 'MQTT',
   protocolVersion: 5
 }
